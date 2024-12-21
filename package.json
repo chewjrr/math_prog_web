@@ -1,0 +1,11 @@
+{
+    "name": "math_prog_web",
+    "version": "1.0.0",
+    "description": "Математика для программирования",
+    "main": "index.html",
+    "scripts": {
+      "start": "stackblitz:start"
+    },
+    "dependencies": {}
+  }
+  

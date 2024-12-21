@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em;
+}
+
+.button-container {
+    margin: 20px 0;
+}
+
+button {
+    margin: 0 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#prac-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+}
+
+.prac-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    margin-top: 20px;
+}
+
+canvas {
+    border: 1px solid #000;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 2px;
+}
+
+.game-board div {
+    width: 30px;
+    height: 30px;
+    background-color: lightgray;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.calc-box {
+    border: 1px solid #000;
+    width: 400px;
+    height: 600px;
+    position: relative;
+    padding: 10px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(13, 1fr);
+}
+
+.display {
+    grid-column: span 4;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.button {
+    font-size: 18px;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+.button:active {
+    background-color: #e0e0e0;
+}
+
+.button-wide {
+    grid-column: span 2;
+}
+
+.button-tall {
+    grid-row: span 2;
+}
+
+.button-extra-tall {
+    grid-row: span 3;
+}
+
+.button-extra-wide {
+    grid-column: span 3;
+}
+
+.shift-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.language-switch {
+    margin-top: 20px;
+}
